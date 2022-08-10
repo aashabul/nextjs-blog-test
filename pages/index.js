@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "../components/BlogCart";
 
-const graphcms = new GraphQLClient(process.env.GRAPHCMS_API);
+const graphcms = new GraphQLClient(`${process.env.GRAPHCMS_API}`);
 
 const QUERY = gql`
   {
