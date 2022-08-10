@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["media.graphassets.com"],
+    domains: [process.env.DOMAIN],
     formats: ["image/webp"],
   },
 };
