@@ -3,7 +3,9 @@ import styles from "../styles/Home.module.css";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "../components/BlogCart";
 
-const graphcms = new GraphQLClient(`${process.env.GRAPHCMS_API}`);
+const graphcms = new GraphQLClient(
+  "https://api-eu-west-2.hygraph.com/v2/cl6na5c0i1a5101umaldhcp1x/master"
+);
 
 const QUERY = gql`
   {
